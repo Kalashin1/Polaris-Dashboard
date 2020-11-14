@@ -1,0 +1,8 @@
+.profile-col{
+  margin-top: 1rem;
+  border-right : 1px solid gray !important
+}
+
+a{
+  text-decoration: underline #f44336;
+}

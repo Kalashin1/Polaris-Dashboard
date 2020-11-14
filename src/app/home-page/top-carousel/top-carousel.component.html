@@ -1,0 +1,19 @@
+<div class="outer">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let image of slideImages">
+      <a href="">
+
+        <app-nav class="hide-on-med-and-down" style="z-index : 22"></app-nav>
+
+        <img [src]="image.pic" class="responsive-img sm:h-screen" />
+        <div class="carousel-text"  style="font-family: 'Panton';">
+          <div class="container">
+            <h3 class="white-text center">{{image.title}}</h3>
+            <app-carousel-text></app-carousel-text>
+          </div>
+        </div>
+
+      </a>
+    </ng-template>
+  </owl-carousel-o>
+</div>

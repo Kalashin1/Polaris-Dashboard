@@ -1,0 +1,11 @@
+#home{
+  position: relative;
+  top: -5.5rem; left : 0;
+}
+
+@media screen and (max-width: 800px)
+{
+  #home{
+    top : 0 !important
+  }
+}

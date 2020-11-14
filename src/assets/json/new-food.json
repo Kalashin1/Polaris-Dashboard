@@ -1,0 +1,90 @@
+[
+	{
+    	"name" : "Bangers Mash pro",
+        "id" : 34505830,
+        "price" : 118,
+        "image" : "../../../assets/images/foods/bangers-mash/2d6280161fb20921f44bf76fc53c74ec.jpg",
+        "ingredients" : ["beans", "hotdog", "eggs"],
+        "type" : "meal"
+    },
+  	{
+        "name" : "Beef Wellington saga",
+        "id" : 23439045,
+        "price" : 148,
+        "image" : "../../../assets/images/foods/beef-wellignton/117c3b236b05c588a851e740f138166c.jpg",
+        "ingredients" : ["beef"],
+        "type" : "meal"
+    },
+    {
+      "name" : "Burger Deluxe",
+      "id" : 94821933,
+      "price" : 58,
+      "image" : "../../../assets/images/foods/burger/3b91a8e5fc3b19d28870a6595243ae60.jpg",
+      "ingredients" : ["burger", "beef", "vegetables", "flour", "tomatoes"],
+      "type" : "snacks"
+    },
+  	{
+      "name" : "Triple Decker",
+      "id" : 98299002,
+      "price" : 62,
+      "image" : "../../../assets/images/foods/burger/f9866d1c4a882f24c80dde154662dcd0.jpg",
+      "ingredients" : ["burger", "beef", "whip cream", "flour"],
+      "type" : "snacks"
+    },
+  	{
+      "name" : "French Cottage Pie",
+      "id" : 90001212,
+      "price" : 94,
+      "image" : "../../../assets/images/foods/cottage-pie/ddbf8d3a9ddd14eb0e65a2d42cf7ffdd.jpg",
+      "ingredients" : ["flour", "kidney"],
+      "type" : "meal"
+    },
+  	{
+      "name" : "Mayor's Breakfast",
+      "id" : 56336653,
+      "price" : 120,
+      "image" : "../../../assets/images/foods/english-breakfast/0069685a38008fcc695377c331dc0223.jpg",
+      "ingredients" : ["beef", "vegetables", "eggs", "hotdog"],
+      "type" : "meal"
+    },
+  	{
+      "name" : "Chips and Tilapia",
+      "id" : 87786555,
+      "price" : 175,
+      "image" : "../../../assets/images/foods/fish-and-chips/9e78a4740edd0a59485af5a946b3e49e.jpg",
+      "ingredients" : ["fish", "chips"],
+      "type" : "meal"
+    },
+  	{
+      "name" : "Disneyland Hotdog",
+      "id" : 77443322,
+      "price" : 43,
+      "image" : "../../../assets/images/foods/hotdog/7a78566bff48c5a32d8ce79bdc317bef.jpg",
+      "ingredients" : ["hotdog", "flour"],
+      "type" : "snacks"
+    },
+  	{
+      "name" : "Hot vanilla",
+      "id" : 93113321,
+      "price" : 38,
+      "image" : "../../../assets/images/foods/ice-cream/92624f368b45cdee5cebedcb3e2d5d5a.jpg",
+      "ingredients" : ["ice-cream"],
+      "type" : "snacks"
+    },
+  	{
+      "name" : "Jocked Kidney Beans",
+      "id" : 22345444,
+      "price" : 180,
+      "image" : "../../../assets/images/foods/kidney-beans/c6357c9c494881be19b8ce24eaba16cc.jpg",
+      "ingredients" : ["beans", "hotdog", "tomatoes"],
+      "type" : "meal"
+    },
+  	{
+  		"name" : "Beef Pie",
+  		"id" : 67112266,
+  		"price" : 56,
+  		"image" : "../../../assets/images/foods/meatpie/72a04ceb1e16962b2ce40ac8c3a785ee.jpg",
+      "ingredients" : ["beef", "flour"],
+      "type" : "snacks"
+  	}
+]

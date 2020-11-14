@@ -1,0 +1,55 @@
+<section style="position: relative;">
+	<div class="rule center red mb-8"></div>
+    <h3 class="bold red-text bold my-8 center-align" style="font-family: 'Panton'">
+      {{title}}
+    </h3>
+    <owl-carousel-o [options]="customOptions" style="font-family: 'Panton'">
+    	<ng-template carouselSlide>
+    		<div class="new-food">
+    			<img [src]="newFood[1].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+    			<div class="ml-4 my-4">
+    				<h6 class="red-text">{{newFood[1].name}}</h6>
+    				<h6 class="red-text">${{newFood[1].price}}</h6>
+    			</div>
+    		</div>
+    		<div class="new-food">
+	    		<img [src]="newFood[3].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+	    		<div class="ml-4 my-4">
+	    			<h6 class="red-text">{{newFood[3].name}}</h6>
+    				<h6 class="red-text">${{newFood[3].price}}</h6>
+    			</div>
+    		</div>
+    		<div class="new-food">
+	    		<img [src]="newFood[5].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+	    		<div class="ml-4 my-4">
+	    			<h6 class="red-text">{{newFood[5].name}}</h6>
+    				<h6 class="red-text">${{newFood[5].price}}</h6>
+    			</div>
+    		</div>
+    	</ng-template>
+
+    	<ng-template carouselSlide>
+    		<div class="new-food">
+    			<img [src]="newFood[2].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+    			<div class="ml-4 my-4">
+    				<h6 class="red-text">{{newFood[2].name}}</h6>
+    				<h6 class="red-text">${{newFood[2].price}}</h6>
+    			</div>
+    		</div>
+    		<div class="new-food">
+	    		<img [src]="newFood[4].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+	    		<div class="ml-4 my-4">
+	    			<h6 class="red-text">{{newFood[4].name}}</h6>
+    				<h6 class="red-text">${{newFood[4].price}}</h6>
+    			</div>
+    		</div>
+    		<div class="new-food">
+	    		<img [src]="newFood[6].image" class="my-4" style="width: 30%; height: 100px; object-fit: cover;">
+	    		<div class="ml-4 my-4">
+	    			<h6 class="red-text">{{newFood[6].name}}</h6>
+    				<h6 class="red-text">${{newFood[6].price}}</h6>
+    			</div>
+    		</div>
+    	</ng-template>
+    </owl-carousel-o>
+</section>

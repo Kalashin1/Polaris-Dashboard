@@ -1,0 +1,24 @@
+<app-banner [bannerText]="'Profile'"></app-banner>
+<section>
+  <div class="row">
+
+    <div class="profile-col hide-on-small-only col l4 m4">
+      <div class="photo border-2 border-gray-400 circle rounded-full z-depth-1-half grey w-40 h-40 flex justify-center align-items-center">
+        <h1 class="white-text center-align">{{user.displayName.slice(0,1)}}</h1>
+      </div>
+      <div class="text-gray-700 other-info">
+        <h5 class="my-4">Name : {{user.displayName}}</h5>
+        <h5 class="my-4"> Email : {{user.email}}</h5>
+        <h6 class="my-4">Email verified - {{user.emailVerified}}</h6> <span class="red-text my-4" style="text-decoration: underline #f44336; cursor: pointer;">Verify email</span>
+      </div>
+      <div class="orders-list">
+        <a class="my-4" href="" [routerLink]="'orders'">
+          <h6 class="red-text">Orders</h6>
+        </a>
+      </div>
+    </div>
+    <div class="col s12 l8 m8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>

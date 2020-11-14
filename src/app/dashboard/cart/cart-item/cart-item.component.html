@@ -1,0 +1,25 @@
+<div class="grid lg:grid-cols-7 md:grid-cols-7 sm:grid-cols-3">
+	<div class="grid sm:col-span-4">
+	    <div class="col s12 flex my-4 sm:pt-10">
+	        <img class="responsive-img product-image" style="width: 200px; height: 200px; object-fit: cover;" [src]="cartItem.image">
+	        <div class="product-description">
+	            <p class="flow-text m-4" style="font-family: 'Panton'">{{cartItem.name}}</p>
+	            <p class="m-4">{{cartItem.description}}</p>
+	        </div>
+	    </div>
+	</div>
+	<div class="sm:pt-10 ml-4 sm:ml-0 sm:my-0 my-6" style="font-family: 'Panton'">
+	    <p class="flow-text"><span class="hide-on-med-and-up mr-8 sm:mr-0">Price - </span>$ {{cartItem.price}}</p>
+	</div>
+	<div class="sm:pt-10 ml-4 sm:ml-0 sm:my-0 my-6">
+	    <div class="quantity-controls flex" style="align-items: center;">
+	    	<div class="hide-on-med-and-up" style="font-family: 'Panton'">Quantity</div>
+	        <a href="" class="btn-floating mx-2 z-depth-0 second-nav"><i class="material-icons">add</i></a>
+	        <p class="flow-text mx-2">{{cartItem.amount}}</p>
+	        <a href="" class="btn-floating z-depth-0 mx-2 second-nav"><i class="material-icons">remove</i></a>
+	    </div>
+	</div>
+	<div class="hide-on-small-only sm:ml-6 sm:pt-10 sm:ml- 0ml-8">
+	    <p class="flow-text">$ {{cartItem.price * cartItem.amount}}</p>
+	</div>
+</div>

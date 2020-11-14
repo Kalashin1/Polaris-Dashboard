@@ -1,0 +1,19 @@
+<app-banner [bannerText]="'Meals'"></app-banner>
+<section>
+	<div class="row">
+		<div class="col m4 l4 hide-on-small-only">
+			<app-sidebar [filters]="ingredientFilter" [types]="foodType"></app-sidebar>
+			<app-new-food></app-new-food>
+		</div>
+		<div class="col s12 l8 m8">
+			<app-fooditem [foodList]="foods"></app-fooditem>
+			<div class="pagination">
+				<li><a href=""><i class="material-icons">chevron_left</i></a></li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href=""><i class="material-icons">chevron_right</i></a></li>
+			</div>
+		</div>
+	</div>
+</section>

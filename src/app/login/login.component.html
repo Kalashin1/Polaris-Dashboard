@@ -1,0 +1,43 @@
+<app-banner [bannerText]="'Login'"></app-banner>
+
+<div class="section" style="margin: 0;padding: 0;">
+
+  <div class="row z-depth-2 rounded" style="margin: .8rem; padding: 0;">
+
+    <div class="col s12 m8 l8 hide-on-small-only" style="margin: 0; padding: 0;overflow: hidden">
+      <img src="../../assets/images/auth/spencer-davis-q3ApAZsS1os-unsplash.jpg" style="max-height: 50vw; width: 100%;object-fit: cover;" />
+    </div>
+
+    <div class="col s12 m4 l4 position-relative">
+
+      <form #loginForm="ngForm" name="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+
+        <h3 class="red-text center-align" style="font-family: 'Panton';">Login</h3>
+
+        <div class="input-field">
+          <i class="prefix material-icons red-text">email</i>
+          <input type="email" name="email" required [(ngModel)]="user.email" class="border-white" #email="ngModel" id="email" />
+          <small class="pl-12 red-text text-md" *ngIf="email.invalid &&email.touched">Please Enter Your Email</small>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-field">
+          <i class="prefix material-icons red-text">https</i>
+          <input type="password" name="password" required [(ngModel)]="user.password" class="border-white" #password="ngModel" id="password" />
+          <small class="pl-12 red-text text-md" *ngIf="password.invalid &&password.touched">Please Enter Your Password</small>
+          <label for="password">Password</label>
+        </div>
+
+        <div>
+          <a href="" class="blue-text" style="text-decoration: underline">Forgot Password ?</a>
+        </div>
+
+        <div class="input-field">
+          <div class="center">
+            <button type="submit" class="btn brown-text gray darken-2 waves-effect font-bold waves-darken" [disabled]="!loginForm.valid">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KalaFood</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/lib/tailwind/tailwind.css">
+  <link rel="stylesheet" href="assets/lib/font awesome/all.min.css">
+  <link rel="stylesheet" href="assets/lib/materialize/material-icons.css">
+  <link rel="stylesheet" href="assets/lib/materialize/materialize.min.css">
+  <link rel="stylesheet" href="assets/lib/owl/owl.carousel.min.css">
+
+  <style>
+
+.rule{
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem
+}
+
+    @font-face{
+        font-family: 'Panton';
+        font-style: normal;
+        src: url(assets/font/PantonDemo-Black.otf)
+      }
+  </style>
+</head>
+<body>
+
+
+
+  <app-root></app-root>
+
+
+  <script src="assets/lib/jQuery/jquery.min.js"></script>
+  <script src="assets/lib/font awesome/all.js"></script>
+  <script src="assets/lib/materialize/materialize.min.js"></script>
+  <script src="assets/lib/owl/owl.carousel.min.js"></script>
+  <script>
+     //initializing  materialize functions
+    //  sidenav
+    document.addEventListener('DOMContentLoaded', function(){
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems)
+    })
+
+    $(document).ready(function(){
+      $('.dropdown-trigger').dropdown();
+      $('.collapsible').collapsible()
+      
+    })
+
+    $(document).ready(()=>{
+      $('.tooltipped').tooltip()
+    })
+
+
+    // slider
+
+
+  </script>
+</body>
+</html>

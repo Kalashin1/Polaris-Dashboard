@@ -1,0 +1,47 @@
+.shop{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-rows: 1fr;
+	grid-gap: 8px;
+	position: relative;
+}
+
+.food-item{
+	display: grid;
+}
+
+.options{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	transition: all .4s;
+	position: absolute;
+	bottom: 5rem; width: 100%;left: 0
+}
+
+
+.card-image:hover .options{
+	display: flex;
+	transition: all .4s;
+}
+
+
+@media screen and(max-width: 670px){
+	.shop{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (max-width: 800px){
+	.shop{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 800px){
+	.shop{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
