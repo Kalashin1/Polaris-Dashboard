@@ -1,17 +1,17 @@
+import { Channel } from './channel'
+
 export interface User {
-  firstName:string,
-  lastName: string,
+  name?:string,
   email:string,
+  id?: number,
   password:string,
-  id : string
+  channels?: Channel[]
 }
 
 export interface LoggedInUser {
-  uid : string,
-  displayName : string,
-  photoUrl : string,
-  email : string,
-  emailVerified : boolean
-  orders : [],
-  cart : []
+  name?: string,
+  id?: number,
+  email: string,
+  password: string
+  channels?: Channel[]
 }

@@ -121,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kala-food"
+    }
+  },
+  "defaultProject": "kala-food",
+  "cli": {
+    "analytics": false
+  }
 }

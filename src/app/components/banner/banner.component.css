@@ -1,0 +1,10 @@
+#banner
+{
+	background: url(../../../assets/images/pexels-helena-lopes-2253275.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
