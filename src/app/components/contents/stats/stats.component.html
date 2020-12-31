@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row-2">
+    <div class="graph">
+      <h2>Graph</h2>
+    </div>
+    <div class="transact">
+      <div class="transact-item" *ngFor="let transaction of transactions; index as i">
+        <div>
+
+          <h4>{{transaction.type}}</h4>
+          <div class="range">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="transact-details" *ngFor="let item of transaction.items.reverse()">
+          <h5 *ngIf="item.type !== 'manual settlement'">{{item.type}}: <span [class]="{yellow : item.amount === 20, green: item.amount === 80,  blue: item.amount === 100}">{{item.amount}}</span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

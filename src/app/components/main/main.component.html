@@ -1,0 +1,15 @@
+<section>
+  <div class="container">
+    <div class="transact-val-container">
+      <div class="transact" *ngFor="let transactItem of transactData">
+        <div class="transact-details">
+          <p>{{transactItem.title}}</p>
+          <h6>{{transactItem.numbers}}</h6>
+        </div>
+        <div class="graph-image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-stats [transactions]="transactions"></app-stats>

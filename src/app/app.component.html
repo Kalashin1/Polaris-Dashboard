@@ -1,2 +1,5 @@
 <app-header></app-header>
-<app-sidebar></app-sidebar>
+<div class="section">
+  <app-sidebar [listItem]="transactions"></app-sidebar>
+  <app-main [transactions]="transactions"></app-main>
+</div>

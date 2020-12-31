@@ -22,10 +22,10 @@
         <ul *ngFor="let link of transact.items">
           <li>
             <a>
-              <i class="material-icons" *ngIf="transact.type === 'payments' && link !== 'manual settlement'">account_balance_wallet</i>
-              <i class="material-icons" *ngIf="transact.type === 'payments' && link === 'manual settlement'">radio_button_checked</i>
+              <i class="material-icons" *ngIf="transact.type === 'payments' && link.type !== 'manual settlement'">account_balance_wallet</i>
+              <i class="material-icons" *ngIf="transact.type === 'payments' && link.type === 'manual settlement'">radio_button_checked</i>
               <i class="material-icons" *ngIf="transact.type === 'orders'">list</i>
-              <span class="transact-link">{{link}}</span>
+              <span class="transact-link">{{link.type}}</span>
             </a>
           </li>
         </ul>
@@ -36,6 +36,6 @@
 
   <div class="merchant-profile">
     <i class="material-icons">person</i>
-    <span>User profile</span>
+    <span>Merchant profile</span>
   </div>
 </section>

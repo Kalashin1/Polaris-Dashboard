@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,15 +12,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
   invoiceBtn : string = 'generate invoice'
-
-  listItem = [{
-    type: 'payments',
-    items: ['all payments', 'reconciled payments', 'un-reconciled payments', 'manual settlement']
-  },
-  {
-    type: 'orders',
-    items: ['all orders', 'pending orders', 'reconciled orders']
-  }]
+  @Input()listItem
 
   main = 'main'
 

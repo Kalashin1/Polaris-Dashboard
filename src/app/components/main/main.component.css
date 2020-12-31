@@ -1,0 +1,36 @@
+*{
+  --box-shadow : 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)
+}
+
+.container{
+  padding: 3rem 0
+}
+
+.transact-val-container, .transact-val-container .transact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transact-val-container .transact{
+  margin: 1rem .4rem;
+  background: #fff;
+  width:260px;
+  padding: .5rem 0;
+  box-shadow: var(--box-shadow);
+}
+
+
+
+.transact p{
+  font-size: .56rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.graph-image{
+  width: 60px;
+  height: 40px;
+  background: grey;
+  margin-left: .4rem
+}

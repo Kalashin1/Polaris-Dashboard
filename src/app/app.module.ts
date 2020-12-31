@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MainComponent } from './components/main/main.component';
+import { StatsComponent } from './components/contents/stats/stats.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AppComponent,
     HeaderComponent,
     SidebarComponent,
+    MainComponent,
+    StatsComponent,
   ],
   imports: [
     BrowserModule,
