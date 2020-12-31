@@ -11,5 +11,17 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  invoiceBtn : string = 'generate invoice'
+
+  listItem = [{
+    type: 'payments',
+    items: ['all payments', 'reconciled payments', 'un-reconciled payments', 'manual settlement']
+  },
+  {
+    type: 'orders',
+    items: ['all orders', 'pending orders', 'reconciled orders']
+  }]
+
+  main = 'main'
 
 }
