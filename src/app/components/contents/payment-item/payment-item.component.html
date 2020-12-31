@@ -1,0 +1,24 @@
+<div class="product-item-container">
+  <div>
+    <span class="circle">
+      {{productItem.title.slice(0,2)}}
+    </span>
+    <h4>{{productItem.title}}</h4>
+  </div>
+  <div>
+    {{productItem.userId}}
+  </div>
+  <div>
+    {{productItem.id}}
+  </div>
+
+
+  <div>
+
+    <div class="status" [ngClass]="{false: productItem.done === false, true:productItem.done === true}">
+      <div class="dot" [ngClass]="{falseBg: productItem.done === false, trueBg:productItem.done === true}"></div>
+      {{productItem.done}}
+    </div>
+    <i class="material-icons">expand_more</i>
+  </div>
+</div>

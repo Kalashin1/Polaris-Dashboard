@@ -1,0 +1,18 @@
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto
+}
+
+form input[type=text]{
+  border: 0;
+  background-color: transparent;
+  padding: .5rem;
+  outline: 0;
+}
+
+form .prefix{
+  position: relative;
+  top: .4rem
+}

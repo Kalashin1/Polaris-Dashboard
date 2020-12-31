@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainComponent } from './components/main/main.component';
 import { StatsComponent } from './components/contents/stats/stats.component';
+import { PaymentListComponent } from './components/contents/payment-list/payment-list.component';
+import { PaymentItemComponent } from './components/contents/payment-item/payment-item.component';
+import { FormComponent } from './components/contents/form/form.component';
 
 
 @NgModule({
@@ -18,6 +21,9 @@ import { StatsComponent } from './components/contents/stats/stats.component';
     SidebarComponent,
     MainComponent,
     StatsComponent,
+    PaymentListComponent,
+    PaymentItemComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,

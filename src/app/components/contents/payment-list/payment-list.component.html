@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="header">
+    <div class="header-text">
+      {{title}}
+    </div>
+    <div class="header-content">
+      <div>
+        showing, 10 out of {{productList.length}} items
+      </div>
+
+      <div>
+      <app-form></app-form>
+      </div>
+
+      <div>
+        <div class="select">
+          <div class="select-title" (click)="toggleSelect()">
+            Show
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+
+          <div class="select-item-container" *ngIf="show">
+            <div class="select-item" *ngFor="let select of selectList" (click)="toggleSelect()">
+              {{select}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="product-list">
+    <div class="product-list-heading">
+      <div>User Id</div>
+      <div>Id</div>
+      <div>Title</div>
+      <div>Status</div>
+    </div>
+
+    <div *ngFor="let productItem of productList">
+      <app-payment-item [productItem]="productItem"></app-payment-item>
+    </div>
+
+    <div class="product-list-footer">
+      <div>
+        showing, 10 out of {{productList.length}} items
+      </div>
+
+      <div class="pagination">
+        <div class="prev">Previous</div>
+        <div class="active">1</div>
+        <div class="">2</div>
+        <div class="next">Next</div>
+      </div>
+    </div>
+  </div>
+
+</div>

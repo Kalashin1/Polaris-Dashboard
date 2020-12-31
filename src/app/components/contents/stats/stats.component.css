@@ -40,7 +40,7 @@
 
 /* each span in range */
 .range span{
-  height: 3px;
+  height: 5px;
   border-radius: .5px;
   display: block
 }
