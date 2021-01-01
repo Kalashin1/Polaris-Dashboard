@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
+import { from } from 'rxjs';
+import { HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getTodos():Observable<any>{
+    return this.http.get('https://jsonplaceholder.typicode.com/users/1/todos')
+  }
 }

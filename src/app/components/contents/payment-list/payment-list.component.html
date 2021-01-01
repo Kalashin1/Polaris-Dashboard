@@ -6,7 +6,7 @@
     </div>
     <div class="header-content">
       <div>
-        showing, 10 out of {{productList.length}} items
+        showing, {{productList.length}} out of {{totalItemList.length}} items
       </div>
 
       <div>
@@ -33,9 +33,9 @@
 
   <div class="product-list">
     <div class="product-list-heading">
+      <div>Title</div>
       <div>User Id</div>
       <div>Id</div>
-      <div>Title</div>
       <div>Status</div>
     </div>
 
@@ -45,14 +45,14 @@
 
     <div class="product-list-footer">
       <div>
-        showing, 10 out of {{productList.length}} items
+        showing, {{productList.length}} out of {{totalItemList.length}} items
       </div>
 
       <div class="pagination">
-        <div class="prev">Previous</div>
+        <div class="prev" (click)="newPage('prev')">Previous</div>
         <div class="active">1</div>
         <div class="">2</div>
-        <div class="next">Next</div>
+        <div class="next" (click)="newPage('next')">Next</div>
       </div>
     </div>
   </div>

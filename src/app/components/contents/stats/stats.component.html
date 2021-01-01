@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row-2">
     <div class="graph">
-      <h2>Graph</h2>
+      <app-graph [graph]="transactions"></app-graph>
     </div>
     <div class="transact">
       <div class="transact-item" *ngFor="let transaction of transactions; index as i">
@@ -13,7 +13,7 @@
             <span></span>
           </div>
         </div>
-        <div class="transact-details" *ngFor="let item of transaction.items.reverse()">
+        <div class="transact-details" *ngFor="let item of transaction.items">
           <h5 *ngIf="item.type !== 'manual settlement'">{{item.type}}: <span [class]="{yellow : item.amount === 20, green: item.amount === 80,  blue: item.amount === 100}">{{item.amount}}</span></h5>
         </div>
       </div>

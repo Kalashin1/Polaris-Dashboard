@@ -67,12 +67,14 @@
 }
 
 .product-list{
+  box-shadow: var(--box-shadow);
   margin: 2rem 0
 }
 
 
 .product-list-heading{
   display: grid;
+  font-weight: 600;
   background-color: #ddddf1;
   grid-template-columns: repeat(4, 1fr);
 }

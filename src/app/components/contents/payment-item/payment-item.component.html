@@ -3,7 +3,7 @@
     <span class="circle">
       {{productItem.title.slice(0,2)}}
     </span>
-    <h4>{{productItem.title}}</h4>
+    <h4>{{productItem.title.slice(0, 10)}}</h4>
   </div>
   <div>
     {{productItem.userId}}
@@ -15,9 +15,9 @@
 
   <div>
 
-    <div class="status" [ngClass]="{false: productItem.done === false, true:productItem.done === true}">
-      <div class="dot" [ngClass]="{falseBg: productItem.done === false, trueBg:productItem.done === true}"></div>
-      {{productItem.done}}
+    <div class="status" [ngClass]="{false: productItem.completed === false, true:productItem.completed === true}">
+      <div class="dot" [ngClass]="{falseBg: productItem.completed === false, trueBg:productItem.completed === true}"></div>
+      {{productItem.completed}}
     </div>
     <i class="material-icons">expand_more</i>
   </div>

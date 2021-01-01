@@ -10,7 +10,6 @@ export class PaymentItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.productItem)
   }
 
   @Input()productItem
